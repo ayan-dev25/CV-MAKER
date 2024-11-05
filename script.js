@@ -21,7 +21,7 @@ function downloadCV() {
     const element = document.getElementById('cv-preview'); // The CV preview section to convert to PDF
     const options = {
         margin:       0.5,
-        filename:     document.getElementById('name').value +'_CV'.pdf',
+        filename:     document.getElementById('name').value +'_CV'+'.pdf',
         image:        { type: 'jpeg', quality: 0.98 },
         html2canvas:  { scale: 2 },
         jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
